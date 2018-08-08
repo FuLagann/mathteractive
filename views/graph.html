@@ -1,0 +1,79 @@
+<div class="app-container">
+	<div class="equation-list">
+		<div class="equation-entries"></div>
+		<!--
+			Example entry:
+			<div class="equation-entry">
+				<div class="entry-pantry far fa-newspaper"></div>
+				<input class="entry-text"/>
+			</div>
+		/-->
+		<div class="add-equation-entry">
+			Add new Entry
+		</div>
+	</div>
+	
+	<div class="equation-help">
+		<span class="far fa-question-circle"></span>
+	</div>
+	<div class="equation-settings">
+		<span class="fas fa-cogs"></span>
+	</div>
+	<div class="equation-toggle">
+		<span class="fas fa-pencil-alt"></span>
+		&emsp;
+		Edit
+	</div>
+	<div class="graph-tabs">
+		<!--
+			Ideal Scenario:
+			<div class="graph-tab" data="x_y">X Y</div>
+			<div class="graph-tab" data="y_z">Y Z</div>
+			<div class="graph-tab" data="x_y_z">X Y Z</div>
+		/-->
+	</div>
+	
+	<canvas id="graph-canvas"></canvas>
+</div>
+
+<div class="modal" id="help-modal">
+	<div class="modal-exit">X</div>
+	<div class="modal-title">Help</div>
+	<div class="modal-body">
+		In here goes any helpful tips, tutorials, and
+		what nots needed to help newbies understand how
+		to use the web app.
+	</div>
+</div>
+
+<div class="modal" id="settings-modal">
+	<div class="modal-exit">X</div>
+	<div class="modal-title">Global Settings</div>
+	<div class="modal-body">
+		In here go settings such as default color palletes,
+		default line width, text size, and font. Anything
+		that needs to be changed on a global scale goes here
+	</div>
+</div>
+
+<div class="modal" id="pantry-modal">
+	<div class="modal-exit">X</div>
+	<div class="modal-title">Equation Pantry</div>
+	<div class="modal-body">
+		<ul class="tabs">
+			<li>Settings - Change the individual settings of the equation</li>
+			<li>Properties - The known mathematical properties that the equation holds</li>
+			<li>Code - The raw JSON view of the equation. Used to share around graphs and whole schemas</li>
+			<li>Help - Any kind of help useful for the equation in question</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Scripts /-->
+<script src="/js/paml.js"></script>
+<script src="/js/three.js"></script>
+<script src="/js/three.meshline.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/graph-registry.js"></script>
+<script src="/js/graphing.js"></script>
+<script src="/js/graph-ui.js"></script>

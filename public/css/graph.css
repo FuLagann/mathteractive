@@ -1,0 +1,153 @@
+
+body	{
+	margin:	0px;
+	padding:	0px;
+	font-family:	verdana;
+	background-color:	black;
+	overflow:	hidden;
+}
+
+.app-container	{
+	width:	100%;
+	background-color:	#ef0;
+}
+
+.equation-list	{
+	width:	40%;
+	height:	0%;
+	position:	absolute;
+	top:	0%;
+	left:	0%;
+	background-color:	#ababab;
+	transition:	height 0.5s;
+	overflow-y:	auto;
+}
+
+.add-equation-entry	{
+	text-align:	center;
+	height:	32px;
+	line-height:	32px;
+	background-color:	#f4f4f4;
+}
+.add-equation-entry:hover,
+.equation-settings:hover,
+.equation-toggle:hover,
+.graph-tab:hover,
+.equation-help:hover	{
+	background-color:	#efefef;
+	cursor:	pointer;
+}
+.add-equation-entry:active,
+.equation-settings:active,
+.equation-toggle:active,
+.graph-tab:active,
+.equation-help:active	{
+	background-color:	#efeffe;
+}
+
+.equation-entry	{
+	height:	32px;
+	width:	100%;
+	margin:	0px;
+	padding:	0px;
+}
+.equation-entry > .entry-pantry	{
+	color:	white;
+	background-color:	royalblue;
+	display:	block;
+	width:	10%;
+	height:	100%;
+	line-height:	32px;
+	text-align:	center;
+	float:	left;
+}
+.equation-entry > .entry-pantry:hover	{
+	color:	lightblue;
+	cursor:	pointer;
+}
+.equation-entry > input	{
+	margin:	0px;
+	padding:	0px;
+}
+.equation-entry > .entry-text	{
+	width:	88%;
+	height:	100%;
+	padding:	0% 1%;
+	border:	none;
+	display:	block;
+	float:	left;
+}
+
+.equation-help	{
+	width:	5%;
+	position:	absolute;
+	top:	0%;
+	left:	0%;
+	height:	24px;
+	line-height:	24px;
+	text-align:	center;
+	background-color:	#d4d4d4;
+	user-select:	none;
+	transition:	top 0.5s;
+}
+
+.equation-settings	{
+	width:	5%;
+	position:	absolute;
+	top:	0%;
+	left:	5%;
+	height:	24px;
+	line-height:	24px;
+	text-align:	center;
+	background-color:	#d4d4d4;
+	user-select:	none;
+	transition:	top 0.5s;
+}
+
+.equation-toggle	{
+	width:	30%;
+	position:	absolute;
+	top:	0%;
+	left:	10%;
+	height:	24px;
+	line-height:	24px;
+	text-align:	center;
+	background-color:	#d4d4d4;
+	user-select:	none;
+	transition:	top 0.5s;
+}
+
+.graph-tabs	{
+	position:	absolute;
+	right:	0px;
+	top:	0px;
+	width:	60%;
+	height:	24px;
+	background-color:	#d4d4d4;
+	user-select:	none;
+}
+
+.graph-tab	{
+	display:	inline-block;
+	width:	64px;
+	height:	100%;
+	line-height:	150%;
+	margin:	0px;
+	text-align:	center;
+	vertical-align: middle;
+}
+
+.graph-tab.selected	{
+	background-color:	#e0e0e0;
+}
+
+#graph-canvas	{
+	position:	absolute;
+	top:	24px;
+	left:	0px;
+	width:	100%;
+	height:	128px;
+	display:	block;
+	z-index:	-10;
+	margin:	0px;
+}

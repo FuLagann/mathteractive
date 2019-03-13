@@ -16,11 +16,6 @@ app.set("view engine", ".html");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/", function(req, res)	{
-	res.render("index",	{
-		title:	""
-	});
-});
-app.get("/graph", function(req, res)	{
 	res.render("graph", {
 		head:	{
 			title:	"Graph",
